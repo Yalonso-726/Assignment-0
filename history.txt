@@ -1,0 +1,72 @@
+    1  echo "Hello Bash!"
+    2  pwd
+    3  cd Desktop
+    4  ls
+    5  cd My Documents
+    6  cd OneDrive
+    7  cd Desktop
+    8  cd code
+    9  ls
+   10  mkdir cs61d
+   11  cd cs61d
+   12  mkdir bash-assignment
+   13  cd bash-assignment
+   14  touch README.md
+   15  touch meaning-of-life.txt
+   16  ls
+   17  mv meaning-of-life.txt history.txt
+   18  code .
+   19  git init
+   20  git status
+   21  git add .
+   22  git status
+   23  git commit -m "Initial commit"
+   24  git checkout -b new-feature
+   25  git branch
+   26  touch feature.txt
+   27  git add feature.txt
+   28  git commit -m "Add feature file"
+   29  git checkout main
+   30  git merge new-feature
+   31  git branch -d new-feature
+   32  git checkout main
+   33  git switch main
+   34  git checkout master
+   35  git merge new-feature
+   36  git branch -d new-feature
+   37  git branch
+   38  ls
+   39  git remote add origin https://github.com/Yalonso-726/Assignment-0.git
+   40  git branch
+   41  git branch -M main
+   42  git push -u origin main
+   43  git checkout -b conflict1
+   44  code .
+   45  git add .
+   46  git commit -m "conflict1 changes"
+   47  git push origin conflict1
+   48  git checkout main
+   49  git branch
+   50  git checkout -b conflict2
+   51  code .
+   52  git add .
+   53  git commit -m "conflict2 changes"
+   54  git push origin conflict2
+   55  git branch
+   56  git switch main
+   57  git branch -d conflict1
+   58  git checkout main
+   59  git pull
+   60  git branch
+   61  git branch
+   62  git pull
+   63  git pull
+   64  ls
+   65  touch .gitignore
+   66  code .gitignore
+   67  git add .gitignore
+   68  git commit -m "Add gitignore"
+   69  touch no-commit.txt
+   70  git status
+   71  git push
+   72  history | tail -n 200 >> history.txt
